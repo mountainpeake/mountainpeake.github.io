@@ -32,6 +32,8 @@
                
                display: flex;
                flex-wrap: wrap;
+                justify-content: center;
+
                
                
            }
@@ -41,45 +43,42 @@
               width: 100%;
               height: 300px;
               display: flex;
-              justify-content: center;
               align-items: center;
                         }
            
-           .menu {
+           .mainImage {
                   background-color: white;
-                  height: 80px;
+                    height: auto;
+                    justify-content: inherit;
+                    align-items: inherit;
                 }
            
            .header {
-                      background-color: white;
-                        height: 1000px;
+                      background-color: red;
+           
                     }
 
             .content {
                       background-color: #EAEDF0;
                     }
 
-            .sign-up {
-                      background-color: #D6E9FE;
-                    }
+            
 
-            .feature-1 {
-                      background-color: #F5CF8E;
-                    }
-
-            .feature-2 {
-                      background-color: #F09A9D;
-                    }
-
-            .feature-3 {
-                      background-color: #C8C6FA;
-                    }
            
+           
+           
+           .africaTitle img {
+               
+               
+               width: 100%;
+               display: block;
+                
+           }
            
            .africaTitle {
                
                width: 100%;
-               display: block;
+               
            }
            
 
@@ -92,55 +91,14 @@
 
             @media only screen and (min-width: 401px) and (max-width: 960px) {
                    
-                   .sign-up,
-                   .feature-1,
-                   .feature-2,
-                   .feature-3,
-                    {
-                    width: 50%;
                    
-                    }
                  }
              
 
                 @media only screen and (min-width: 961px) {
                    
                        
-                       
-                       .page 
-                       {
-                           
-                        width: 960px;
-                        margin: 0 auto;    
-                           
-                         }
-                       .feature-1,
-                       .feature-2,
-                       .feature-3, {
-                           
-                           width: 33.3%
-                       }
-                    
-                       .header {
-                           
-                           height: 500px;
-                       }
-                    
-                    
-                    .sign-up {
-                      height: 200px;
-                      order: 1;
-                    }
-                    .content {
-                      order: 2;
-                    }
-                       
-                      
-                      
-                
-                    
-                        
-                    
+                                  
                                                            }
            
            
@@ -154,13 +112,19 @@
     
   <body>
       <div class='page'>
-          <div class='section menu'>
+         
+          
+          <div class='section mainImage'>
+              
+                <div class="africaTitle"> <img src="africaTitle-w1366px.jpg" style="max-width: 1000px">
+                </div>
+              
           </div>
           
         
           <div class='section header'>
               
-              <img class="africaTitle" src="africaTitle-w1366px.jpg" style='max-width: 1300px'>
+            
               
           </div>
           
@@ -171,21 +135,7 @@
           </div>
           
           
-          <div class='section sign-up'>
-          </div>
-          
-          
-          <div class='section feature-1'>
-          </div>
-          
-          
-          <div class='section feature-2'>
-          </div>
-          
-          
-          <div class='section feature-3'>
-          </div>
-</div>
+      </div>
 
  
       
