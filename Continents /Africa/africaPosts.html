@@ -25,7 +25,6 @@
                 * {
                       margin: 0;
                       padding: 0;
-                      box-sizing: border-box;
                     }
            
            
@@ -52,36 +51,37 @@
                             }
            
            
-           .image {
-               
-               width: 100%;
-               
-           }
            
            
-           .menu {
-                       
-                        background-color: aliceblue;
+           
+             .menu {
+                       height: 10px;
+                        background-color: white;
                     }
 
-                    .header {
-                      background-color: #B2D6FF;
+             .continent {
+                      background-color: white;
+                        height: auto;
+                        justify-content: inherit;
+                        align-items: inherit;
                     }
 
-                    .content {
-                      background-color: #EAEDF0;
-                      height: 600px;
+             .spotLight {
+                    
+                 width: 100%;
+                        
+                        
                     }
 
-                    .sign-up {
-                      background-color: #D6E9FE;
+             .posts {
+                      width: 100%;
                     }
 
-                    .feature-1 {
+              .feature-1 {
                       background-color: #F5CF8E;
                     }
 
-                    .feature-2 {
+              .feature-2 {
                       background-color: #F09A9D;
                     }
 
@@ -89,20 +89,19 @@
                       background-color: #C8C6FA;
                     }
 
-           .sign-up {
-                      height: 200px;
-                      order: 1;
-                    }
-                    .content {
-                      order: 2;
-                    }
-
+        
+           .photo img {
+               
+               width: 100%;
+               height: auto;
+               display: block;
+           } 
 
            
            /* Mobile Styles */
                 @media only screen and (max-width: 400px) {
                   body {
-                    background-color: #F09A9D; /* Red */
+                    background-color: #F09A9D; 
                   }
                 }
 
@@ -128,11 +127,25 @@
                             width: 33.3%;
                           }
                           .header {
-                            height: 400px;
+                              
+                              height: 400px;
                           }
                         }
 
+           .item1 {
+               
+               
+                order: -1;
+               
+               
+           }
            
+           
+           .photoBorder {
+               
+               padding: 5px;
+               
+           }
            
            
            
@@ -154,16 +167,55 @@
           
         
           
-          <div class='section menu'></div>
-          <div class='section header'>
-            <img class="image" src="africaTitle-w1366px.jpg">
+          <div class='section menu'>
+          
+          
           </div>
-          <div class='section content'>
-            <img src='images/content.svg'/>
+          
+          
+          <div class='section continent item1 photo photoBorder'>
+                    
+              <div class="photo photoBorder">
+                  
+                  <img src="africaTitle-w1366px.jpg">
+                  
+              </div>
+              
+           </div>
+          
+          
+          
+          
+          
+          <div class='section spotLighter item1 photoBorder'>
+              
+                <div class="photo">
+                    
+
+                    <img class="photo" src="Screen%20Shot%202018-09-26%20at%2003.59.37.png">
+                    
+                    
+
+                </div> 
+              
           </div>
-          <div class='section sign-up'>
-            <img src='images/sign-up.svg'/>
+          
+          
+          
+          <div class="section posts item1">
+              
+              
+                  <div class='section photo'>
+                      
+                    <img src="280331_10150316190670610_5016355_o.jpg">
+                      
+                  </div>
+          
           </div>
+          
+          
+          
+          
           <div class='section feature-1'>
             <img src='images/feature.svg'/>
           </div>
@@ -174,11 +226,7 @@
             <img src='images/feature.svg'/>
           </div>
         
-          <div class="section header">
-              
-            <img class="image" src="africaTitle-w1366px.jpg">
-          
-          </div>
+        
       
       
       
