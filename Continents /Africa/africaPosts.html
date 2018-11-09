@@ -43,11 +43,11 @@
            
            .section {
                
-              width: 100%;
-              height: 500px;
+              height: 100%;
               display: flex;
               align-items: center;
                justify-content: center;
+               text-align: center;
                             }
            
            
@@ -56,99 +56,90 @@
            
              .menu {
                        height: 10px;
-                        background-color: white;
+                        background-color: black;
                     }
 
              .continent {
                       background-color: white;
-                        height: auto;
-                        justify-content: inherit;
-                        align-items: inherit;
+                          height: auto;
+                          justify-content: inherit;
+                          align-items: inherit;
                     }
+           
+           .spotlight {
+               
+                  height: auto;
+                  justify-content: inherit;
+                  align-items: inherit;
+               
+           }
+           
 
-             .spotLight {
-                    
-                 width: 100%;
-                        
-                        
-                    }
+             
 
              .posts {
-                      width: 100%;
+                 
+                 
+                  height: auto;
+                  justify-content: inherit;
+                  align-items: inherit;
+                 
                     }
 
-              .feature-1 {
-                      background-color: #F5CF8E;
-                    }
+             
 
-              .feature-2 {
-                      background-color: #F09A9D;
-                    }
-
-                    .feature-3 {
-                      background-color: #C8C6FA;
-                    }
-
-        
            .photo img {
                
                width: 100%;
-               height: auto;
                display: block;
            } 
+           
+       
 
            
            /* Mobile Styles */
                 @media only screen and (max-width: 400px) {
                   body {
-                    background-color: #F09A9D; 
+                    background-color: #white; 
                   }
                 }
 
                 /* Tablet Styles */
                 @media only screen and (min-width: 401px) and (max-width: 960px) {
-                          .sign-up,
-                          .feature-1,
-                          .feature-2,
-                          .feature-3 {
+                    .posts{
                             width: 50%;
                           }
-                        }
+                       } 
 
                 /* Desktop Styles */
                 @media only screen and (min-width: 961px) {
                           .page {
-                            width: 960px;
+                            width:auto;
                             margin: 0 auto;
                           }
-                          .feature-1,
-                          .feature-2,
-                          .feature-3 {
-                            width: 33.3%;
+                          
                           }
-                          .header {
+                          .continent {
                               
-                              height: 400px;
+                              height: auto;
                           }
                         }
 
-           .item1 {
+         
+           
+           .height1 {
                
-               
-                order: -1;
-               
-               
+               height: 100vh;
+               position: relative;
            }
            
+           .title {     
+               
+               width: 100%;
+               position: absolute;
+               margin-top: -30%;
            
-           .photoBorder {
-               
-               padding: 5px;
-               
            }
-           
-           
-           
            
            
         </style>
@@ -173,9 +164,10 @@
           </div>
           
           
-          <div class='section continent item1 photo photoBorder'>
+          
+          <div class='section continent item1 photo'>
                     
-              <div class="photo photoBorder">
+              <div class="photo">
                   
                   <img src="africaTitle-w1366px.jpg">
                   
@@ -186,45 +178,77 @@
           
           
           
-          
-          <div class='section spotLighter item1 photoBorder'>
+        <article>
+          <div class='section spotLight'>
               
                 <div class="photo">
+                 
                     
-
-                    <img class="photo" src="Screen%20Shot%202018-09-26%20at%2003.59.37.png">
+                       <img src="images/Holewall-big.png">
+                    
+                    
+                    <h1 class="title">TITLE HERE</h1>
                     
                     
 
                 </div> 
               
           </div>
+            
+        </article>      
           
           
-          
-          <div class="section posts item1">
+        <article> 
+          <div class="section posts">
               
               
-                  <div class='section photo'>
+                  <div class='photo'>
                       
-                    <img src="280331_10150316190670610_5016355_o.jpg">
+                   
+                       
+                        <img src="images/Ukechill-big.png">
                       
+                      <h1 class="title">TITLE HERE</h1>
+                     
+                          
                   </div>
           
           </div>
+            
+        </article> 
           
           
           
-          
-          <div class='section feature-1'>
-            <img src='images/feature.svg'/>
+          <div class="section posts">
+              
+            <div class='photo'>
+                
+            <img src="images/Screen%20Shot%202018-04-20%20at%2013.23.59.png"Screen%20Shot%202018-07-16%20at%2017.13.21.png"">
+                
+            </div>
           </div>
-          <div class='section feature-2'>
-            <img src='images/feature.svg'/>
+              
+          
+          <div class="section posts">
+              
+            <div class='photo'>
+                
+            <img src="images/Screen%20Shot%202018-05-08%20at%2018.15.32.png"">
+                
+            </div>
+          </div> 
+          
+          
+          <div class="section posts">
+              
+            <div class='photo'>
+                
+            <img src="images/IMG_vilanculos.jpg">  
+                
+            </div>
           </div>
-          <div class='section feature-3'>
-            <img src='images/feature.svg'/>
-          </div>
+         
+         
         
         
       
