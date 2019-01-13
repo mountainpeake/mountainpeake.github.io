@@ -33,44 +33,31 @@
                
                 padding: 0;
                 margin: 0;
-                
-
+            
 
                     }
            
            
            
-           .section {
+           .sectionContainer {
                
               height: 100%;
               align-items: center;
                text-align: center;
+                position: relative;
                             }
            
            
            
            
            
-             .menu {
-                       height: 10px;
-                        background-color: white;
-                    }
 
              .continent {
                       background-color: white;
                           height: auto;
                           align-items: inherit;
                     }
-           
-           .spotlight {
-               
-                  height: auto;
-                  align-items: inherit;
-               
-           }
-           
-
-             
+  
 
              .posts {
                  
@@ -85,23 +72,29 @@
            .photo img {
                
                width: 100%;
-               display: block;
            } 
+           
+           .position {
+               
+               
+               position: 
+           }
            
        
 
            
-           /* Mobile Styles */
-                @media only screen and (max-width: 400px) {
-                  body {
-                    background-color: #white; 
+          
+                @media only screen and (min-width: 400px) {
+                  h1 {
+                    font-size:1rem;
                   }
                 }
 
                 /* Tablet Styles */
                 @media only screen and (min-width: 401px) and (max-width: 960px) {
                     .posts{
-                            width: 50%;
+                            width: auto;
+                            font-size: 2.5rem;
                           }
                        } 
 
@@ -110,29 +103,26 @@
                           .page {
                             width:auto;
                             margin: 0 auto;
+                            font-size: 3rem;
                           }
                           
                           }
-                          .continent {
-                              
-                              height: auto;
-                          }
+                          
                         }
 
          
+          
            
-           .height1 {
+           .fontSize {
                
-               height: 100vh;
-               position: relative;
+               
+               font-size: 1rem;
            }
            
            .title {     
                
-               width: 100%;
-               position: absolute;
-               margin-top: -20%;
-           
+               text-align: center;
+               position: relative;
            }
            
            h1 {
@@ -140,7 +130,7 @@
                
                color: white;
                font-family: 'Martel', serif;
-               font-size: 150%;
+               font-size: 2rem;
                
            }
            
@@ -157,18 +147,14 @@
       
       
       
-      <div class='page'>
+    
           
         
-          
-          <div class='section menu'>
-          
-          
-          </div>
+        
           
           
           
-          <div class='section continent'>
+          <div class='sectionContainer'>
                     
               <div class="photo">
                   
@@ -182,19 +168,24 @@
           
           
         <article>
-          <div class='section spotLight'>
+          <div class='sectionContainer'>
               
-                <a href="https://www.google.com" class="photo">
-                 
+               
+              <div class="position">
+              <a href="" class="photo">
+                 <h1 class="title">The Children of Lubanzi</h1>
                     
                        <img src="images/Holewall-big.png">
-                    
+                  
+                   
 
-                    <h1 class="title">The Children of Lubanzi</h1>
                     
                     
+            
 
                 </a> 
+                  
+                </div>  
               
           </div>
             
@@ -202,10 +193,10 @@
           
           
         <article> 
-          <div class="section spotLight">
+          <div class="sectionContainer">
               
               
-                  <a href="https://www.google.com" class='photo'>
+                  <a href="" class='photo'>
                       
                    
                        
@@ -223,9 +214,9 @@
           
           
         <article>
-          <div class="section spotLight">
+          <div class="sectionContainer">
               
-            <a href="https://www.google.com" class='photo'>
+            <a href="" class='photo'>
                 
             <img src="images/Screen%20Shot%202018-04-20%20at%2013.23.59.png"Screen%20Shot%202018-07-16%20at%2017.13.21.png"">
                 
@@ -242,9 +233,9 @@
         
           <article>
           
-          <div class="section spotLight">
+          <div class="sectionContainer">
               
-            <a href="https://www.google.com" class='photo'>
+            <a class='photo'>
                 
             <img src="images/Screen%20Shot%202018-05-08%20at%2018.15.32.png">
                 
@@ -263,8 +254,7 @@
       
       
       
-      
-      </div>
+    
       
       
  
