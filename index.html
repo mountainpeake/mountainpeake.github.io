@@ -17,9 +17,13 @@
     
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-
-      <link href="https://fonts.googleapis.com/css?family=Adamina|Alegreya+Sans" rel="stylesheet">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      
+     <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+      
+      <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Source+Serif+Pro" rel="stylesheet">  
     
       
       
@@ -28,220 +32,98 @@
       
        <style type="text/css">
 
-           .align-Navbar {
-               
-                background-color:transparent !important;
-                border-color:transparent;
-                background-image:none;
-                box-shadow:none;
-                width: auto;
-                height: 80px;
-               
-              
-              
-           }
-           
-           
-           
-           #navbarFooting {
-               
-             
-               text-align: right;
-               float: right;
-               padding-bottom: 90px;
-               padding-right: 20px;
-               
-           }
-           
-           #socialmediaNavbar {
-               
-               
-               text-align: right;
-               padding-top: 10px;
-                margin-right: 40px;
-                opacity: 0.75;
-               
-               
-               
-           }
-           
-          
-
-           #imagePlacement {
-               
-               margin-top: -80px;
-           }
-               
-           
-           
-        
-           
-           
-          
-           
-          
-           
-           .hover-image:hover {
-               
-               
-               
-               opacity: 0;
-                transition: opacity 1.1s ease-in;
-               
-           }
-           
-        
-           
-           .hover-text:hover {
-               
-               opacity: 1;
-               transition: 
-               
-           }
-           
-           
-         
-           
-           
-           #northPin {
-               
-               position:absolute;
-                width: 5vw;
-               height: auto;
-               left: 15%;
-                top: 16.5%;
-              
-        
-               
-           }
-         
-              
-           #africaPin {
-               
-               position:absolute;
-                width: 5vw;
-               height: auto;
-               left: 52%;
-                top: 46.5%;
-               
             
+          
+           
+              * {
+                      margin: 0;
+                      padding: 0;
+                    }
+           
+           
+           .homePage {
+               
+            position: relative;
+               display: inline;
                
            }
+         
            
            
-           .africa-text {
+         
+          
+           .removeMargin {
                
-               width: 5vw;
-               height: auto;
-               left: 52%;
-                top: 46.5%;
+               padding: 0;
+               margin: 0;
                
                
            }
            
            
          
-             #europePin {
+         
+           .africaPin {
                
-               position:absolute;
-                width: 5vw;
-               height: auto;
-               left: 45.25%;
-                top: 14.55%;
-               
-                
-               
+                position: absolute;
+                left: 51%;
+                top: 44%;
+                max-width: 6%;
+              
+        
                
            }
                
            
-           .containerNA {
-             position: absolute;
-               top: 14%;
-               left: 13%;
-                width:100px; 
-                height: auto;
-                }
-          
+           .EUPin {
+               
+                position: absolute;
+                left: 46%;
+                top: 12%;
+                max-width: 6%;
+              
+        
+               
+           }
+    
+           
+           .EUPin {
+               
+                position: absolute;
+                left: 46%;
+                top: 12%;
+                max-width: 6%;
+              
+        
+               
+           }
+           
+           .NAPin {
+               
+                position: absolute;
+                left: 13%;
+                top: 12%;
+                max-width: 6%;
+              
+        
+               
+           }
+           
+           
+           .africaPin:hover {
+                  transform: scale(1.5);
 
-           .pinImage {
-                  display: inline;
-                  width: 100%;
-                  height: auto;
                 }
-           
-           
-           .overlay {
-                  position: absolute;
-                  top: 0;
-                  bottom: 0;
-                  left: 0;
-                  right: 0;
-                  height: 100%;
-                  width: 100%;
-                  opacity: 0;
-                  transition: 1s ease;
-                  background-color:azure;
-                  border-radius: 40px;
-                }
-           
-           .containerPin:hover .overlay {
-                  opacity: 1;
-                }
-           
-           .pinText {
-                  color: black;
-                  font-size: 20px;;
-                  position: relative;
-                  top: 50%;
-                  left: 50%;
-                  -webkit-transform: translate(-50%, -50%);
-                  -ms-transform: translate(-50%, -50%);
-                  transform: translate(-50%, -50%);
-                  text-align: center;
-                }
-           
-           
-           
-           .fade-out {
-               
-               opacity: 0;
-                transition: opacity 1s ease-in-out;
-                -moz-transition: opacity 1s ease-in-out;
-                -webkit-transition: opacity 1s ease-in-out;
-               
-           }
-           
-           .fade-out:hover {
-               
-                opacity: 1.0;
-                transition: opacity .55s ease-in-out;
-                -moz-transition: opacity .55s ease-in-out;
-                -webkit-transition: opacity .55s ease-in-out;
+        
+           .EUPin:hover {
+                  transform: scale(1.5);
 
-               
-           }
+                }
            
-           .fade-in {
-               
-               opacity: 1;
-                transition: opacity 1s ease-in-out;
-                -moz-transition: opacity 1s ease-in-out;
-                -webkit-transition: opacity 1s ease-in-out;
-               
-           }
-           
-           .fade-in:hover {
-               
-                opacity: 0;
-                transition: opacity .55s ease-in-out;
-                -moz-transition: opacity .55s ease-in-out;
-                -webkit-transition: opacity .55s ease-in-out;
+           .NAPin:hover {
+                  transform: scale(1.5);
 
-               
-           }
-           
-       
+                }
            
            
         </style>
@@ -254,62 +136,54 @@
     
   <body>
       
- 
-
-        <nav id="socialmediaNavbar" class="sticky-top navbar-expand-sm bg-light navbar-light align-Navbar">
-      
-            <a class="navbar-brand" href="#">
-    <img src="instagram.png" width="36" height="36" alt="">
-  </a>
-            
-              <a class="navbar-brand" href="#">
-    <img src="facebook.png" width="36" height="36" alt="">
-  </a>
-            
-            
-            
-            
-              </nav>
-
- 
-      <nav id="navbarFooting" class="fixed-bottom navbar-expand-sm bg-light navbar-light align-Navbar">
-             
-          
-          
+    <div class="container-fluid">
+        <div class="row">
+                <div class="col removeMargin homePage">    
         
-             
-                  
-
-        </nav>
-    
-     
+ 
+       <div id="imagePlacement">
+          
+          <img class="img-fluid" src="Desktop-Background-Img/Background-final.jpg">
       
-      
-    
-      <div class="containerNA containerPin">  
-          <img id="northPin" src="PIN.png" class="pinImage">
       </div>
+
+            <img src="Misc-Imgs/Desktop-Page/Pins/AF-PIN.png" class="africaPin"> 
+
+                    
+                    <img src="Misc-Imgs/Desktop-Page/Pins/EU-PIN.png" class="EUPin"> 
+                    
+                    <img src="Misc-Imgs/Desktop-Page/Pins/NA-PIN.png" class="NAPin"> 
+                    
+         </div>
+      
+    
+          
           
       
            
-      
-      <div>
-          <img id="africaPin" class="fade-out" src="PIN.png">
-          
-          <h1>HI</h1>
-          
-     </div>      
-      
-              <img id="europePin" src="PIN.png">
+           
+            </div>
      
+   </div>
       
       
-      <div id="imagePlacement">
-          
-          <img class="img-fluid" src="Testing-New1.jpg">
+      <div class="container-fluid">
+        <div class="row">
+           <div class="col removeMargin">
+            
+            <img class="img-fluid" src="Desktop-Background-Img/desktop-footer.jpg">
+               
+               
+            </div>
+          </div>
       
       </div>
+        
       
+          
+         
+      
+   
       
       
       
@@ -326,15 +200,17 @@
 
       
   
-            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+             <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.3/js/tether.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        
       
-      
-
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
       
      
       
