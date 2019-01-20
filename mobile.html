@@ -3,140 +3,217 @@
     
     
   <head>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
-    <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-
-      <link href="https://fonts.googleapis.com/css?family=Adamina|Alegreya+Sans" rel="stylesheet">
-    
-        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">      
+       <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      
+     <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+      
+      <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Source+Serif+Pro" rel="stylesheet">  
+      
+      
       <title>The Traveling Economist</title>
       
       
        <style type="text/css">
 
-           
-           
-           
-           
-          
-           
-           body, html {
-                        height: 100%;
-                        margin: 0px;
-                        padding: 0px;
-                    }
-        
-       
-           
-           .parallaxAfrica {
-               
-                       height: 100%;
-                       background-image: url(Mobile-Background-Img/IMG_8177.jpg);
-                       background-position: center;
-                       background-repeat: no-repeat;
-                       background-size: cover;
-                       background-attachment: fixed;
-                       overflow-x: hidden;
-                
-           }
-           
-           .parallaxEurope {
-               
-                        height: 100%;
-                        background-image: url(Mobile-Background-Img/swissWalk.jpg);
-                        background-attachment: fixed;
-                        background-position: center;
-                        background-repeat: no-repeat;
-                        background-size: cover;
-                        overflow-x: hidden;
-
-           }
-           
-           .parallaxNA {
-               
-                        height:100%;
-                        background-image: url(Mobile-Background-Img/treeplantingjump.jpg);
-                        background-attachment: fixed;
-                        background-position: center;
-                        background-repeat: no-repeat;
-                        background-size: cover;
-                        overflow-x: hidden;
-
-               
-           }
-           
-           
-          
-           #africa {
-               
-               position: relative;
-               top:40%;
-               left: 15%;
-               border: 0;
-               float:left
-               
-           }
-           
-           #europe {
-               
-               position: relative;
-               top: 50%;
-               left: 5%;
-               border: 0;
-               float:left
-           
-            
-
-           }
-           
-           #northAmerica {
-               
-               position: relative;
-               float:left;
-               top: 15%;
-               left: 11%;
-               border: 0;
-
-           }
-           
-           
-           
-           
          
            
-           #socialMedia {
+          video::-webkit-media-controls {
+               
+                  display: none;
+                }
+           
+           
+           
+          
+           video {
+               
+                        width:100%; 
+                        height:100%;
+                        display: block;
+                        overflow-x: hidden;
+                    }
+          
+           
+          
+           
+           
+           .continent {
+               
+               position: relative;
+               text-align: center;
+               max-width: 100%;
+               padding: 0;
+               margin:0;
+             
+           }
+           
+           
+          
+           
+      
+           
+           
+          .socialMedia {
                
                position: fixed;
                padding-left: 90%;
                padding-top: 3%;
                background-color: transparent;
+               z-index: 1;
               
                
            }
            
-           
-           h2 {
-                    color: white;
-                    text-shadow: 1.5px 1.5px #000000;
-                    font-family: 'Montserrat', sans-serif;
-                    opacity: .75;
- 
-           }
-           
-           
-           .fontSize {
+           .no-margin {
                
-               font-size: 25vw;
+               width: 100vw;
+               padding-right: 0;
                
            }
            
-           .fontSizeNA {
+           
+           
+           
+           .headerNA {
                
-         font-size: 20vw;
+               font-size: 30vw;
+                position: absolute;
+                 z-index: 1;
+                 color: white;
+                font-family: 'Crimson Text', serif;
+                text-shadow: 1.5px 1.5px #000000;
+                 opacity: 0.85;
+                top: 55%;
+               
+           }
+           
+           .paraNA {
+               
+               font-size: 5vw;
+                position: absolute;
+                 z-index: 1;
+                 color: white;
+                font-family: 'Crimson Text', serif;
+                text-shadow: 1.5px 1.5px #000000;
+                 opacity: 0.85;
+                text-align: center;
+               top:45%;
+               left:10%;
+               
+           }
+           
+           .continueNA {
+               
+               border-radius: 9px;
+               background-color: transparent;
+               position: absolute;
+               top:70%;
+               left:25%;
+               color: white;
+               z-index: 100;
+               position: absolute;
+               font-size: 15vw;
+                font-family: 'Crimson Text', serif;
+               display: none;
 
            }
+           
+           .headerEU {
+               
+               font-size: 33vw;
+                position: absolute;
+                 z-index: 1;
+                 color: white;
+                font-family: 'Crimson Text', serif;
+                text-shadow: 1.5px 1.5px #000000;
+                 opacity: 0.85;
+                top: 60%;
+               left: 7%;
+               
+           }
+           
+           .continueEU {
+               
+               border-radius: 9px;
+               background-color: transparent;
+               position: absolute;
+               top:70%;
+               left:25%;
+               color: white;
+               z-index: 100;
+               position: absolute;
+               font-size: 15vw;
+                font-family: 'Crimson Text', serif;
+               display: none;
+
+           }
+           
+           
+            .paraEU {
+               
+               font-size: 5vw;
+                position: absolute;
+                 z-index: 1;
+                 color: white;
+                font-family: 'Crimson Text', serif;
+                text-shadow: 1.5px 1.5px #000000;
+                 opacity: 0.85;
+                text-align: center;
+               top:45%;
+               left:10%;
+               
+           }
+              
+            .headerAF {
+               
+               font-size: 40vw;
+                position: absolute;
+                 z-index: 1;
+                 color: white;
+                font-family: 'Crimson Text', serif;
+                text-shadow: 1.5px 1.5px #000000;
+                 opacity: 0.85;
+                top: 50%;
+               left: 4%;
+               
+           }
+           
+           .continueAF {
+               
+               border-radius: 9px;
+               background-color: transparent;
+               position: absolute;
+               left:20%;
+               top: 100%;
+               color: white;
+               z-index: 100;
+               position: absolute;
+               font-size: 15vw;
+                font-family: 'Crimson Text', serif;
+               display: none;
+               
+           }
+           
+           .paraAF {
+               
+               
+               font-size: 5vw;
+                position: absolute;
+                 z-index: 1;
+                 color: white;
+                font-family: 'Crimson Text', serif;
+                text-shadow: 1.5px 1.5px #000000;
+                text-align: center;
+               top:40%;
+               left:10%;
+               
+           }
+          
            
         </style>
       
@@ -148,88 +225,174 @@
     
   <body>
       
+    
       
       
+           
+           
+           
+           
+        <div class="socialMedia">
       
-          <div id="socialMedia">
-      
-          <img src="instagram.png" width="28" height="28" alt="">
+          <img src="Socialmedia-Img/instagram.png" width="28" height="28" alt="">
 
-          </div>
-      
-      
-       <a href="">
-      
-            <div class="parallaxAfrica"> 
-
-               <div id="africa"> 
-
-                   <h2 class="fontSize">Africa</h2>
-
-                </div>
-
-            </div>
-
-      </a>
-      
-      
-      
-      
-    <a href="">
-           <div class="parallaxEurope">
-
-                <div id="europe"> 
-
-                    <h2 class="fontSize">Europe</h2>
-
-
-                </div>
-
-
-            </div>
-     </a>
-      
-      
-      
-   
-      <a href="">
-            <div class="parallaxNA">
+          </div>  
       
     
-                
-               <div id="northAmerica"> 
-                   <h2 class="fontSizeNA">North America</h2>
+                    
+                     
+                     
+                    
+    
+              <div class="continent">  
+                  <div class="row">
+                      <div class="col no-margin">
+                    
+                  
+                     <video controls autoplay muted loop>
+                          <source src="Mobile-Background-Img/Mobile-Background.mp4" type="video/mp4">
+                          
+                        </video>
+                    
+                  <h1 class="headerAF" id="headerAF">Africa</h1>
+                          
+                          <h2 id="paraAF" class="paraAF"> Total Population: 1.216 billion <br> Nominal GDP: $2.19 trillion
+                          <br>Common Exports: <br>Palm Oil, Gold & Diamonds, Cocoa, Oil 
+                              <br>Largest Economy: Nigeria ($376b, 17.2% total) </h2>
+                          
+                          <button onclick="location.href='';" type="button" class="continueAF" id="continueAF" >Continue</button> 
 
-          
+                  </div>  
+                </div>     
+           </div>
+      
+            <div class="continent"> 
+                <div class="row">
+                      <div class="col no-margin">
+                    
+                     <video controls autoplay muted loop>
+                          <source src="Mobile-Background-Img/Mobile-europe.mp4"type="video/mp4">
+                          
+                        </video>
+                    
+                    <h1 class="headerEU" id="headerEU">Europe</h1>
+                          
+                          <h2 id="paraEU" class="paraEU"> Total Population: 743 million <br> Nominal GDP: $18.8 trillion
+                              <br>Largest Economy: Germany ($3.7t) </h2>
+                          
+                          <button onclick="location.href='';" type="button" class="continueEU" id="continueEU" >Continue</button> 
+                    
+                    </div>
                 </div>
-      
-      
             </div>
-          
-      </a>
+                
+                <div class="continent"> 
+                    <div class="row">
+                      <div class="col no-margin">
+                    
+                     <video controls autoplay muted loop>
+                          <source src="Mobile-Background-Img/Mobile-NA-Background.mp4" type="video/mp4">
+                          
+                        </video>
+                    
+                    <h1 id="headerNA" class="headerNA">North America</h1>
+                          
+                          <p id="paraNA" class="paraNA"> Total Population: 579 million <br> Nominal GDP: $23.55 trillion
+                          <br>Exports: <br>USA ($1.546t, 65.1%) Type: Services 
+                          <br>Canada: ($420.6b, 17.7%) Type: Resource 
+                          <br>Mexico: ($409.5b, 17.1%) Type: Manufacturing</p>
+                          
+                          
+                        <button onclick="location.href='';" type="button" class="continueNA" id="continueNA" >Continue</button>  
+                    
+                        </div>
+                    </div>
+            </div>
       
-      
-      
+        
       
       
       
       
       
   
-            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+                <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.3/js/tether.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        
       
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
       
-
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
       
       <script type="text/javascript">
       
        
 
+           var vids = $("video"); 
+                    $.each(vids, function(){
+                           this.controls = false; 
+                    });   
+            
+          
+          $(document).ready(function(){
+                    $("#paraNA").hide();
+                    $("#headerNA").on("click",function(){
+                        $("#paraNA").show();
+                        $("#continueNA").show();
+                        $("#headerNA").hide();
+                        
+                        
+                    });
+                
+                $("#paraNA").on("click",function(){
+                    $("#headerNA").show();
+                    $("#paraNA").hide();
+                    $("#continueNA").hide();
+            });
+
+                   });
+          
+          $(document).ready(function(){
+                    $("#paraEU").hide();
+                    $("#headerEU").on("click",function(){
+                        $("#paraEU").show();
+                        $("#continueEU").show();
+                        $("#headerEU").hide();
+                        
+                        
+                    });
+                
+                $("#paraEU").on("click",function(){
+                    $("#headerEU").show();
+                    $("#paraEU").hide();
+                    $("#continueEU").hide();
+            });
+
+                   });
+          
+          
+          $(document).ready(function(){
+                    $("#paraAF").hide();
+                    $("#headerAF").on("click",function(){
+                        $("#paraAF").show();
+                        $("#continueAF").show();
+                        $("#headerAF").hide();
+                        
+                        
+                    });
+                
+                $("#paraAF").on("click",function(){
+                    $("#headerAF").show();
+                    $("#paraAF").hide();
+                    $("#continueAF").hide();
+            });
+
+                   });
           
       </script>
       
