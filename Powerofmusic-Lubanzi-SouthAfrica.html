@@ -40,8 +40,8 @@
            
            #article-title-container {
                
-           position: absolute;
-            top: 60%;
+               position: absolute;
+               top: 30%;
                 
              
             
@@ -117,20 +117,7 @@
            }
            
            
-           .gifVids {
-               
-               padding-top: 12px;
-               padding-bottom: 22px;
-               
-               
-
-               
-           }
-           
-           
-         
-           
-           
+            
            @media (max-width:420px) {
                
                p {
@@ -153,13 +140,7 @@
                    
                }
                
-               #date-stamp {
-                   
-                   
-                   height: 
-               }
-               
-               
+              
             
            }
            
@@ -207,19 +188,31 @@
                padding-bottom: 10%;
            }
            
-           .homeButton {
+          .homeMenu {
                
-               border-radius: 13px;
-               background-color: transparent;
-               color: white;
                position: absolute;
-               font-size: 4vw;
-               top:75%;
-               left: 70%;
-               
+               z-index: 100;
+               left: 70vw;
+               top:7%;
+              
+    
                
            }
+           
+           .homePic {
+               
+            width:17vw;
+            opacity: 0.6;
+            transition: opacity 1s ease;
+            
+           }
 
+           .homePic:hover {
+               
+               opacity: 1;
+           }
+           
+           
         </style>
       
     
@@ -412,10 +405,12 @@
                         </video>
                         
                         
-                     <button onclick=location.href="index.html" type="button" class="homeButton" id="homeButton">Home</button>    
+                 
+      
+      <a class="homeMenu" href="https://mountainpeake.github.io/"><img class="homePic" src="AfricaImages/home-button/home-button.png"></a>
+      </div>    
                
                         
-                    </div>
                   </div>
                 </div>
        
